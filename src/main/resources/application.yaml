@@ -1,0 +1,6 @@
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    queue-name: activemq_queue
+    user: admin
+    password: admin
