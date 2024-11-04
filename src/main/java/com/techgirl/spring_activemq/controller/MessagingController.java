@@ -20,4 +20,16 @@ public class MessagingController {
         return "Message sent successfully";
     }
 
+    @PostMapping("/send-cron")
+    public String sendMessageCron(@RequestBody Message message){
+        messagingService.sendCronScheduledMessage(message.toString());
+        return "Message sent successfully";
+    }
+
+    @PostMapping("/send-schedule")
+    public String sendMessageSchedule(@RequestBody Message message){
+        messagingService.sendDelayScheduledMessage(message.toString());
+        return "Message sent successfully";
+    }
+
 }

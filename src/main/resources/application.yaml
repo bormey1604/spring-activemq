@@ -4,3 +4,4 @@ spring:
     queue-name: activemq_queue
     user: admin
     password: admin
+
